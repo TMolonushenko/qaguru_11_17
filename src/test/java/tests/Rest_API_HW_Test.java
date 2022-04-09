@@ -32,7 +32,7 @@ public class Rest_API_HW_Test {
     }
 
     @Test
-    void ListTest() {
+    void listTest() {
         given()
                 .param("id", 2)
                 .get("https://reqres.in/api/unknown")
