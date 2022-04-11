@@ -102,7 +102,7 @@ public class Rest_API_HW_Test {
                 .post("https://reqres.in/api/register")
                 .then()
                 .statusCode(200)
-                .body("token", is("QpwL5tke4Pnpja7X4"));
+                .body("token", is(notNullValue()));
     }
 
 
