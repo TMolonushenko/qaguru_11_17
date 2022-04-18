@@ -14,7 +14,7 @@ import static org.hamcrest.Matchers.notNullValue;
 public class DemoWebShopHWTest {
 
     @Test
-    void addToWishListTesat() {
+    void addToWishListTest() {
         given()
                 .contentType("application/x-www-form-urlencoded; charset=UTF-8")
                 .body("addtocart_18.EnteredQuantity=1&addtocart_19.EnteredQuantity=1")
@@ -64,8 +64,8 @@ public class DemoWebShopHWTest {
 
         getWebDriver().manage().addCookie(new Cookie("NOPCOMMERCE.AUTH", authorizationCookie)); // устанавливаем куки
 
-        open("http://demowebshop.tricentis.com/customer/info"); // глазами смотрим что авторизация прошла
-        sleep(5000);
+      //  open("http://demowebshop.tricentis.com/customer/info"); // глазами смотрим что авторизация прошла
+      //  sleep(5000);
 
         $(".account").shouldHave(text("mol@gmail"));
 
