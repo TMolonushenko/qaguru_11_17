@@ -77,4 +77,21 @@ HttpResponse<String> response = Unirest.post("http://demowebshop.tricentis.com/a
 
 
      */
+
+    @Test
+    void addToCartTest() {
+        String response =
+                given()
+                        .contentType("application/x-www-form-urlencoded; charset=UTF-8")
+                        .cookie("Nop.customer=b64e760d-494e-4329-9db7-3b2dce7a6a36;")
+                        .body("product_attribute_72_5_18=53" +
+                                "&product_attribute_72_6_19=54" +
+                                "&product_attribute_72_3_20=57" +
+                                "&addtocart_72.EnteredQuantity=1")
+                        .when()
+                        .post("http://demowebshop.tricentis.com/addproducttocart/details/72/1")
+                        .then()
+                        .extract().response().asString();
+        System.out.println(response);
+    }
 }

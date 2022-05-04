@@ -64,7 +64,7 @@ public class DemoWebShopHWTest {
 
         getWebDriver().manage().addCookie(new Cookie("NOPCOMMERCE.AUTH", authorizationCookie)); // устанавливаем куки
 
-      //  open("http://demowebshop.tricentis.com/customer/info"); // глазами смотрим что авторизация прошла
+       open("http://demowebshop.tricentis.com/customer/info"); // глазами смотрим что авторизация прошла
       //  sleep(5000);
 
         $(".account").shouldHave(text("mol@gmail"));
