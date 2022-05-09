@@ -200,6 +200,7 @@ public class BookStoreTests {
         assertThat(tokenResponse.getToken()).hasSizeGreaterThan(10).startsWith("eyJ");
 
     }
+
     @Test
     void generateTokenWithLombokTest() {
 

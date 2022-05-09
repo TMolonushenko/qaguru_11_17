@@ -9,8 +9,4 @@ public class GenerateTokenResponseLombok {
     private String expires;
     private String status;
     private String result;
-
-
-
-
 }

@@ -7,9 +7,6 @@ public class CredentialsLombok {
 
     private String userName;
     private String password;
-
-
-
 }
 
 

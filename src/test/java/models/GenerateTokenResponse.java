@@ -29,6 +29,4 @@ public class GenerateTokenResponse {
         return result;
     }
 
-
-
 }
